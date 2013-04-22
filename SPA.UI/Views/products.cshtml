@@ -1,18 +1,5 @@
 ﻿<section id="products-view" class="view">
-    <section id="filter">
-        <label>Filter: </label>
-        <input id="filterInput" data-bind="value: products().filterText, valueUpdate: 'afterkeydown'"  placeholder="Filter products" />
-    </section>
-
     <section data-bind="with:products">
-        <section class="view-list" data-bind="template: {name: 'Templates/_product.view.tmpl', foreach: products}"></section>
-@*        <section class="view-list" data-bind="foreach: products">*@
-@*            <img alt="image" data-bind="attr:{src: util.getImagePath(image)}" />*@
-@*            <div>*@
-@*                <label data-bind="text: name"></label>*@
-@*                <span data-bind="text: description"></span>*@
-@*                <label data-bind="text: util.formatCurrency(price)"></label>*@
-@*            </div>*@
-@*        </section>*@
+        <section class="view-list" data-bind="template: {name: 'productsList.view', foreach: products}"></section>
     </section>
 </section>

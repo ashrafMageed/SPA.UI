@@ -47,7 +47,10 @@
    @Scripts.Render("~/bundles/mocks") 
     
     <section class="main">
-        
+        <section id="filter">
+            <label>Filter: </label>
+            <input id="filterInput" data-bind="value: products().filterText, valueUpdate: 'afterkeydown'"  placeholder="Filter products" />
+        </section>
         @RenderPage("Views/products.cshtml")
     </section>
 

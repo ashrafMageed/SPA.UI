@@ -205,12 +205,7 @@
     <Content Include="Scripts\App\ProductModel.js" />
     <Content Include="Scripts\App\Util.js" />
     <Content Include="Scripts\App\vmBrowseProducts.js" />
-    <Content Include="Scripts\infuser-amd.js" />
-    <Content Include="Scripts\infuser-amd.min.gz.js" />
-    <Content Include="Scripts\infuser-amd.min.js" />
     <Content Include="Scripts\infuser.js" />
-    <Content Include="Scripts\infuser.min.gz.js" />
-    <Content Include="Scripts\infuser.min.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -226,12 +221,7 @@
     <Content Include="Scripts\jsmock.js" />
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
-    <Content Include="Scripts\koExternalTemplateEngine-amd.js" />
-    <Content Include="Scripts\koExternalTemplateEngine-amd.min.js" />
     <Content Include="Scripts\koExternalTemplateEngine.js" />
-    <Content Include="Scripts\koExternalTemplateEngine.min.js" />
-    <Content Include="Scripts\koExternalTemplateEngine_all.js" />
-    <Content Include="Scripts\koExternalTemplateEngine_all.min.js" />
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\require.js" />

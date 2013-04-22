@@ -195,6 +195,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\App\vm.ProductDetail.js" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <None Include="Scripts\amplify-vsdoc.js" />
     <Content Include="Scripts\amplify.min.js" />
@@ -246,6 +247,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Templates\_productsList.view.tmpl.html" />
     <Content Include="Views\products.cshtml" />
+    <Content Include="Views\ProductView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

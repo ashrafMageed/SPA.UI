@@ -1,12 +1,17 @@
 ﻿/// <reference path="Mock/ProductsDataMock.js" />
 define('dataService', ['generator'],
 function (generator) {
+    
     var getProducts = function () {
-        //return productsData.getData();
-        return generator.generateProducts(); //[{ name: 'test1' }, { name: 'test2' }];
+        return generator.generateProducts();
     };
 
+    var getProduct = function(id) {
+        return generator.generateProducts()[0];
+    };
+    
     return {
-        getProducts: getProducts
+        getProducts: getProducts,
+        getProduct: getProduct
     };
 });

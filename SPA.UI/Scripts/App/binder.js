@@ -8,6 +8,7 @@
             infuser.defaults.templateUrl = "/Templates";
             
             ko.applyBindings(browseProductsViewModel, $('#products-view').get(0));
+            //ko.applyBindings(browseProductsViewModel, $('#products-view').get(0));
         };
 
         return {

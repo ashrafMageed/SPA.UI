@@ -13,9 +13,9 @@
 //        define('amplify', [], function () { return root.amplify; });
         define('infuser', [], function () { return root.infuser; });
 //        define('moment', [], function () { return root.moment; });
-//        define('sammy', [], function () { return root.Sammy; });
+        define('Sammy', [], function () { return root.Sammy; });
 //        define('toastr', [], function () { return root.toastr; });
-//        define('underscore', [], function () { return root._; });
+        define('underscore', [], function () { return root._; });
     }
 
 //    function loadPluginsAndBoot() {
@@ -28,6 +28,9 @@
 //    }
 //
     function boot() {
-        require(['binder'], function (binder) { binder.init(); });
+        require(['jquery', 'binder', 'route-config'], function ($, binder, routeConfig) {
+            $.when(binder.init())
+            .done(routeConfig.register());
+        });
     }
 })();

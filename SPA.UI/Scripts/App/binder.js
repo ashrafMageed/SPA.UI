@@ -1,5 +1,5 @@
-﻿define('binder', ['ko', 'infuser', 'browseProductsViewModel'],
-    function (ko, infuser, browseProductsViewModel) {
+﻿define('binder', ['ko', 'infuser', 'browseProductsViewModel', 'ProductDetailsViewModel'],
+    function (ko, infuser, browseProductsViewModel, ProductDetailsViewModel) {
         var init = function () {
             
             // infuser set up - move to config later on
@@ -8,7 +8,7 @@
             infuser.defaults.templateUrl = "/Templates";
             
             ko.applyBindings(browseProductsViewModel, $('#products-view').get(0));
-            //ko.applyBindings(browseProductsViewModel, $('#products-view').get(0));
+            ko.applyBindings(ProductDetailsViewModel, $('#productdetails-view').get(0));
         };
 
         return {

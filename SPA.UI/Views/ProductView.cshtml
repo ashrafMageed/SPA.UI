@@ -1,3 +1,8 @@
-﻿@*<section id="productDetails-view">*@
-@*    <section class="view-list" data-bind="template: {name: 'product.view', data: product}"></section>*@
-@*</section>*@
+﻿<section id="productdetails-view" class="view">
+    <section data-bind="with:product">
+        <section class="view-detail" data-bind="template: {name: 'product.view'}"></section>
+        <section>
+            <label data-bind="text: name"></label>
+        </section>
+    </section>
+</section>

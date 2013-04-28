@@ -1,5 +1,5 @@
-﻿define('browseProductsViewModel', ['dataService'],
-function (dataService) {
+﻿define('browseProductsViewModel', ['dataService', 'router'],
+function (dataService, router) {
     var 
         products = ko.observableArray([]),
         filterText = ko.observable(),
@@ -24,6 +24,7 @@ function (dataService) {
         getProducts();
         bindDetailsEvent('#products-view', '.product-brief', function (data) {
             alert('clicked: ' + data.name);
+            router.navigateTo('#/ProductDetails/' + data.id);
         });
     };
 
@@ -31,6 +32,7 @@ function (dataService) {
     
     return {
         productsTemplate : productsTemplate,
-        products: products
+        products: products,
+        activate: activate
     };
 });

@@ -6,8 +6,9 @@ function (generator) {
         return generator.generateProducts();
     };
 
-    var getProduct = function(id) {
-        return generator.generateProducts()[0];
+    var getProduct = function (id) {
+        var product = generator.generateProducts();
+        return product.products[0];
     };
     
     return {

@@ -34,11 +34,12 @@ namespace SPA.UI
             bundles.Add(new ScriptBundle("~/bundles/libs").Include(
                 "~/Scripts/knockout-{version}.js",
                 "~/Scripts/amplify.min.js",
-                "~/Scripts/sammy.min.js",
                 "~/Scripts/jquery.mockjson.js",
                 "~/Scripts/TrafficCop.js",
                 "~/Scripts/infuser.js", // depends on TrafficCop
-                "~/Scripts/koExternalTemplateEngine.js"
+                "~/Scripts/koExternalTemplateEngine.js",
+                "~/Scripts/sammy-0.7.4.js",
+                "~/Scripts/underscore.js"
                 ));
 
 //            bundles.Add(new ScriptBundle("~/bundles/requirejs").Include(

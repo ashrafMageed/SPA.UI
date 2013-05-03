@@ -28,7 +28,7 @@ function (dataService, router) {
         });
     };
 
-        activate();
+        //activate();
     
     return {
         productsTemplate : productsTemplate,

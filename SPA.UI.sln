@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPA.UI", "SPA.UI\SPA.UI.csproj", "{4AD35445-B514-4E7D-B8DC-33CE367CFE96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPA.Presentation", "SPA.Presentation\SPA.Presentation.csproj", "{3196955C-31B1-443F-8959-70BB0D121090}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPA.API", "SPA.API\SPA.API.csproj", "{059AEDBF-8C66-4425-BD3B-1698B9F9947E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{4AD35445-B514-4E7D-B8DC-33CE367CFE96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AD35445-B514-4E7D-B8DC-33CE367CFE96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AD35445-B514-4E7D-B8DC-33CE367CFE96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3196955C-31B1-443F-8959-70BB0D121090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3196955C-31B1-443F-8959-70BB0D121090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3196955C-31B1-443F-8959-70BB0D121090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3196955C-31B1-443F-8959-70BB0D121090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{059AEDBF-8C66-4425-BD3B-1698B9F9947E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{059AEDBF-8C66-4425-BD3B-1698B9F9947E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{059AEDBF-8C66-4425-BD3B-1698B9F9947E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{059AEDBF-8C66-4425-BD3B-1698B9F9947E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

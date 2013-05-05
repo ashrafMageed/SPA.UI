@@ -192,9 +192,18 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\App\BookingModel.js" />
+    <Content Include="Scripts\App\dataprimer.js" />
+    <Content Include="Scripts\App\model.Payment.js" />
     <Content Include="Scripts\App\route-config.js" />
     <Content Include="Scripts\App\router.js" />
+    <Content Include="Scripts\App\model.Tour.js" />
+    <Content Include="Scripts\App\vm.PassengersDetails.js" />
+    <Content Include="Scripts\App\vm.shell.js" />
     <Content Include="Scripts\App\vm.ProductDetail.js" />
+    <Content Include="Scripts\App\vm.Booking.js" />
+    <Content Include="Scripts\App\vm.Tour.js" />
+    <Content Include="Scripts\App\model.PassengerDetail.js" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <None Include="Scripts\amplify-vsdoc.js" />
     <Content Include="Scripts\amplify.min.js" />
@@ -250,9 +259,11 @@
     <Content Include="Templates\_productsList.view.tmpl.html" />
     <Content Include="Views\products.cshtml" />
     <Content Include="Views\ProductView.cshtml" />
+    <Content Include="Views\Booking.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\App\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

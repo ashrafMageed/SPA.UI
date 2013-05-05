@@ -26,6 +26,12 @@
     <header>
         <h1>SPA</h1>
         
+        <nav id="shellTop-view" class="main-nav">
+            <ul data-bind="with: menuHashes">
+                <li class="route-top"><a data-bind="attr: {href: products}">Products</a></li>
+                <li class="route-top"><a data-bind="attr: {href: booking}">Booking</a></li>
+            </ul>
+        </nav>
     </header>
     
    
@@ -53,6 +59,7 @@
         </section>
         @RenderPage("Views/products.cshtml")
         @RenderPage("Views/productView.cshtml")
+        @RenderPage("Views/Booking.cshtml")
     </section>
 
 </body>

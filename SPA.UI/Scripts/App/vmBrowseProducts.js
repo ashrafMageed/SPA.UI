@@ -20,15 +20,20 @@ function (dataService, router) {
             });
         },
 
-    activate = function() {
+        init = function () {
+            bindDetailsEvent('#products-view', '.product-brief', function (data) {
+                alert('clicked: ' + data.name);
+                router.navigateTo('#/ProductDetails/' + data.id);
+            });
+        },
+
+    activate = function () {
+        alert('activate of BrowseProducts called.');
         getProducts();
-        bindDetailsEvent('#products-view', '.product-brief', function (data) {
-            alert('clicked: ' + data.name);
-            router.navigateTo('#/ProductDetails/' + data.id);
-        });
+        
     };
 
-        //activate();
+        init();
     
     return {
         productsTemplate : productsTemplate,

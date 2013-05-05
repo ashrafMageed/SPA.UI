@@ -28,9 +28,11 @@
 //    }
 //
     function boot() {
-        require(['jquery', 'binder', 'route-config'], function ($, binder, routeConfig) {
-            $.when(binder.init())
-            .done(routeConfig.register());
+        require(['jquery', 'binder', 'route-config', 'dataprimer'],
+            function ($, binder, routeConfig, dataprimer) {
+            $.when(dataprimer.fetch())
+                .done(binder.init())
+                .done(routeConfig.register());
         });
     }
 })();

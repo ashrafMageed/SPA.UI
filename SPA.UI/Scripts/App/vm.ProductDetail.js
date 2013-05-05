@@ -7,11 +7,14 @@
             product(prdct);
         },
 
+        init = function () {
+
+        },
         activate = function () {
             getProduct();
         };
 
-        activate();
+        //activate();
 
         return {
             product : product,

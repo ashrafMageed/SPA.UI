@@ -19,7 +19,8 @@
                             callback: route.callback,
                             view: options.view,
                             group: route.group,
-                            isDefault: !!route.isDefault
+                            isDefault: !!route.isDefault,
+                            id: route.id
                         });
                     });
                     return;
@@ -54,17 +55,32 @@
                 var route = routeOverride || options.route;
                 sammy.get(route, function (context) { //context is 'this'
                     options.callback(context.params); // Activate the viewmodel
-                    $('.view').hide();
-                    // reset views
-                    //$('.view').css({
-                    //    marginLeft: '20px',
-                    //    marginRight: '-20px',
-                    //    opacity: 0
-                    //});
-                    $(options.view).css({
-                        display: 'block',
-                        visibility: 'visible'
-                    }).addClass('view-active');
+                    
+                    // move this into presenter module
+                    var $group = $(options.group);
+                    alert(options.group);
+                    if (options.group === '.booking-steps') {
+                        $group.hide();//.find(".active").hide().removeClass('active');
+                        var $section = $(options.id);
+                        $section.css({
+                            display: 'block',
+                            visibility: 'visible'
+                        }).addClass('active');
+                        
+                    } else {
+                        $('.view').hide();
+                        // reset views
+                        //$('.view').css({
+                        //    marginLeft: '20px',
+                        //    marginRight: '-20px',
+                        //    opacity: 0
+                        //});
+                        $(options.view).css({
+                            display: 'block',
+                            visibility: 'visible'
+                        }).addClass('view-active');
+                    }
+                    
                     //    .animate({
                     //    marginRight: 0,
                     //    marginLeft: 0,

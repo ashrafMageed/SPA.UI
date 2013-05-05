@@ -1,0 +1,39 @@
+﻿<section id="booking-view" class="view">
+    
+    <nav id="steps-view" class="booking-nav">
+        <ul data-bind="with: bookingStepsHashes">
+            <li class="route-left"><a data-bind="attr: {href: tour}">Tour</a></li>
+            <li class="route-left"><a data-bind="attr: {href: passengerDetails}">Passenger Details</a></li>
+            <li class="route-left"><a data-bind="attr: {href: payment}">Payment</a></li>
+        </ul>
+    </nav>
+
+    <section id="tour-overview" class="booking-steps active">
+        <section data-bind="with:tour">
+            <section>
+                <section data-bind="with:tour">
+                    You are booking: 
+                    <label data-bind="text: name"></label>
+                    for <label data-bind="text: duration"></label> days
+                </section>
+                <section data-bind="foreach: hotels">
+                    <label data-bind="text: name"></label>
+                </section>
+                <section data-bind="foreach: rooms">
+                    <label data-bind="text: price"></label>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section id="passenger-detail" class="booking-steps">
+        <section data-bind="with:passengerDetails">
+            <label>Test Label</label>
+            <textarea>Test</textarea>
+            <label>Test Label</label>
+            <textarea>Test</textarea>
+            <label>Test Label</label>
+            <textarea>Test</textarea>
+        </section>
+    </section>
+    <section id="payment" class="booking-steps"></section>
+</section>

@@ -1,4 +1,6 @@
-﻿using ServiceStack.WebHost.Endpoints;
+﻿using Ninject;
+using SPA.API.Infrastructure;
+using ServiceStack.WebHost.Endpoints;
 using SPA.API.Services;
 using System;
 using System.Collections.Generic;
@@ -20,6 +22,8 @@ namespace SPA.API
             public override void Configure(Funq.Container container)
             {
                 // Configure our application
+                var kernel = new StandardKernel();
+                container.Adapter = new NinjectAdapter(kernel);
             }
         }
 

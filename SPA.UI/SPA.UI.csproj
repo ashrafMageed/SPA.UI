@@ -248,6 +248,7 @@
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Templates\_flights.view.tmpl.html" />
     <Content Include="Templates\_priceBreakdown.view.tmpl.html" />
     <Content Include="Templates\_product.view.tmpl.html" />
     <Content Include="Web.config" />

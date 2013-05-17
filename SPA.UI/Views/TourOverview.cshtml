@@ -1,10 +1,4 @@
-﻿@{
-    ViewBag.Title = "TourOverview";
-}
-
-<h2>TourOverview</h2>
-
-<section class="tour-overview booking-step" role="main">
+﻿<section class="tour-overview booking-step" role="main">
     <header class="step-header">
         <h1><span>Step 1 of 3 </span>Tour overview</h1>
     </header>
@@ -174,100 +168,9 @@
         </fieldset>
     </div>
     
-    <div class="flights">
-        <h2>Need flights?</h2>
-        <fieldset>
-            <label class="hidden" for="flight-departure-city">Departure city, <span>e.g. New York</span></label>
-            <input name="flight-departure-city" type="text" placeholder="Departure city, e.g. New York" />
-            
-            <fieldset class="flight-times multi-part-question">
-            	<div>
-            		<h3>Departure</h3>
-                </div>
-                <div>
-                    <label for="flight-departure-date" class="hidden">Departure date</label>
-                    <input name="flight-departure-date" placeholder="Departure date" type="date" />
-                </div>
-                <div>
-                    <label for="flight-departure-time" class="hidden">Departure time</label>
-                    <select name="flight-departure-time">
-                        <option value="Any time" selected>Any time</option>
-                        <option value="06:00">06:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="18:00">18:00</option>
-                    </select>
-                </div>
-            </fieldset>
-            <fieldset class="flight-times multi-part-question">
-            	<div>
-	            	<h3>Return</h3>
-                </div>
-                <div>
-                    <label for="flight-return-date" class="hidden">Return date</label>
-                    <input name="flight-return-date" placeholder="Return date" type="date" />
-                </div>
-                <div>
-                    <label for="flight-return-time" class="hidden">Return time</label>
-                    <select name="flight-return-time">
-                        <option value="Any time" selected>Any time</option>
-                        <option value="06:00">06:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="18:00">18:00</option>
-                    </select>
-                </div>
-            </fieldset>
-            <div class="airlines">
-                <fieldset class="selection-matrix">
-                    <div>
-                        <h3>Preference</h3>
-                    </div>
-                    <div>
-                        <label for="airline-class">Class</label>
-                        <select name="airline-class">
-                            <option value="economy" selected>Economy</option>
-                            <option value="premium economy">Premium Economy</option>
-                            <option value="business">Business</option>
-                            <option value="first">First</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="airline-name">Airline</label>
-                        <select name="airline-name">
-                            <option value="No preference" selected>No preference</option>
-                            <option value="Air Canada">Air Canada</option>
-                            <option value="American Airlines">American Airlines</option>
-                            <option value="British Airways">British Airways</option>
-                        </select>
-                    </div>
-				</fieldset>
-                <div class="add-airline">
-                    <h3>Add another airline</h3>
-                    <p>If your preferred airline is unavailable we will search this one.</p>
-                    <button name="add-airline" type="button">Add airline</button>
-                </div>
-            </div>
-            <button name="search-flights" type="button">Search for flights</button>
-            <p class="flights-terms"><a href="#">Terms and conditions apply.</a></p>
-        </fieldset>
-    </div>
+    <section class="view-detail" data-bind="template: {name: 'flights.view'}"></section>
+
 	<div class="next-button group">
     	<button name="next" type="button">Next</button>
     </div>
 </section>
-
-
-
-<aside class="notes" role="complementary">
-	<h2 class="hidden">Notes</h2>
-	<h3>Important</h3>
-    <p>Payment will be required to confirm your booking.</p>
-    <p>Day 1 is the depart USA date. Day 2 is the first included hotel night in London. The tour ends in Paris with a complimentary transfer to the airport at approximately 10:00am</p>
-</aside>
-
-<footer role="contentinfo">
-	<ul>
-    	<li><a href="#">Conditions of Booking</a></li>
-        <li><a href="#">Useful links</a></li>
-    </ul>
-    <small>&copy; Copyright TTC Travel Group Ltd. 2013. All rights reserved.</small>
-</footer>

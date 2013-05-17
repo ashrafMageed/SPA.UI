@@ -1,0 +1,189 @@
+﻿@{
+    ViewBag.Title = "Payment";
+}
+
+<h2>Payment</h2>
+
+<section class="payment booking-step" role="main">
+    <header class="step-header">
+        <h1><span>Step 3 of 3 </span>Payment</h1>
+    </header>
+	
+    <div class="payment-details">
+        <h2>Credit Card payment</h2>
+        <fieldset>
+        	
+            <fieldset>
+                <div class="delivery-address">
+                	<h3>Delivery address (lead passenger)</h3>
+                    <ul>
+                    	<li class="name">
+                        	<span>Name</span>
+                            <b>John Smith</b>
+                        </li>
+                        <li class="street-address">
+                        	<span>Street address</span>
+                            <b>11 Grosvenor Place</b>
+                        </li>
+                        <li class="city">
+                        	<span>City</span>
+                            <b>London</b>
+                        </li>
+                        <li class="state">
+                        	<span>State</span>
+                            <b>New England</b>
+                        </li>
+                        <li class="zip">
+                        	<span>ZIP code</span>
+                            <b>12345</b>
+                        </li>
+                        <li class="country">
+                        	<span>Country</span>
+                            <b>United States of America</b>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="use-delivery-address">
+                	<input for="use-delivery-address" type="checkbox" />
+                    <label name="use-delivery-address">Cardholder address is the same as the delivery address.</label>
+                </div>
+            </fieldset>
+        	
+        
+        	<fieldset class="payment-address address">
+            	<h3>Cardholder address</h3>
+                <div class="street-address">
+                    <label for="street-address-billing" class="hidden">Street address<b class="required">*</b></label>
+                    <input name="street-address-billing" type="text" placeholder="Street address*" />
+                </div>
+                <div class="city">
+                    <label for="city-billing" class="hidden">City<b class="required">*</b></label>
+                    <input name="city-billing" type="text" placeholder="City*" />
+                </div>
+                <div class="country">
+                    <label for="country-billing">Country<b class="required">*</b></label>
+                    <select name="country-billing">
+                        <option value="aus">Australia</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="usa" selected>United Sates of America</option>
+                    </select>
+                </div>
+                <div class="state">
+                    <label for="state-billing">State<b class="required">*</b></label>
+                    <select name="state-billing">
+                        <option value="alabama">Alabama</option>
+                        <option value="california">California</option>
+                        <option value="new-york" selected>New York</option>
+                        <option value="washington">Washington</option>
+                    </select>
+                </div>
+                <div class="zip">
+                    <label for="zip-billing">ZIP<b class="required">*</b></label>
+                    <input name="zip-billing" type="text" />
+                </div>
+            </fieldset>
+            
+            <fieldset class="credit-card">
+           		<h3>Credit Card details</h3>
+                <div class="card-type">
+                    <label for="card-type" class="hidden">Card type<b class="required">*</b></label>
+                    <select name="card-type">
+                        <option value="card type*">Card type*</option>
+                        <option value="visa">VISA</option>
+                        <option value="mastercard">Mastercard</option>
+                    </select>
+                </div>
+                <div class="card-number">
+                    <label for="card-number" class="hidden">Card number<b class="required">*</b></label>
+                    <input name="card-number" type="text" placeholder="Card number*" />
+                </div>
+                <div class="valid-from multi-part-question">
+                	<div>
+                    	<h4>Valid from</h4>
+                    </div>
+                    <div>
+                        <label for="valid-from-month" class="hidden">Month</label>
+                        <select name="valid-from-month">
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="valid-from-year" class="hidden">Year</label>
+                        <select name="valid-from-year">
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="valid-to multi-part-question">
+                	<div>
+                		<h4>Valid to<b class="required">*</b></h4>
+                    </div>
+                    <div>
+                        <label for="valid-to-month" class="hidden">Month</label>
+                        <select name="valid-to-month">
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="valid-to-year" class="hidden">Year</label>
+                        <select name="valid-to-year">
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="security-code">
+                	<label for="security-code" class="hidden">Security code<b class="required">*</b></label>
+                    <input name="security-code" type="text" placeholder="Security code*" />
+                    <p><a href="#">What is this?</a></p>
+                </div>
+                 <div class="issue-number">
+                	<label for="issue-number" class="hidden">Issue number</label>
+                    <input name="issue-number" type="text" placeholder="Issue number" />
+                    <p class="question-notes">Where applicable</p>
+                </div>
+            </fieldset>
+        	
+            <fieldset class="payment-amount selection-matrix">
+            	<div class="hidden">
+                	<h3>Payment amount</h3>
+                </div>
+                <div class="balance">
+                	<input class="pay-balance" name="payment-amount" type="radio" value="Pay Balance"/>
+                    <label for="pay-balance">
+                    	Pay full amount
+                        <span><b class="currency">US$</b> <b class="price">2,847.00</b></span> 
+                    </label>
+                </div>
+                <div class="deposit">
+                	<input class="pay-deposit" name="payment-amount" type="radio" value="Pay Deposit" />
+                    <label for="pay-deposit">
+                    	Pay deposit
+                        <span>Min <b class="currency">US$</b> <b class="price">400.00</b></span> 
+                    </label>
+                    <label for="deposit-amount" class="hidden">Deposit amount</label>
+                    <input name="deposit-amount" type="text" value="400.00" />
+                </div>
+                <p class="question-notes">Because you are booking early, you are eligible to pay a deposit.</p>
+            </fieldset>
+            
+            <fieldset class="terms-and-conditions">
+				<input name="terms-and-conditions" type="checkbox"/>
+                <label for="terms-and-coniditions">I agree to the <a href="#">Terms and Conditions</a>.</label>
+            </fieldset>
+            
+        </fieldset>
+    </div>
+    <div class="next-button group">
+    	<button name="back" type="button">Back</button>
+        <button name="next" type="button">Pay now</button>
+    </div>
+</section>

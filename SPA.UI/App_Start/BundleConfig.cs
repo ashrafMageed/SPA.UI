@@ -42,10 +42,6 @@ namespace SPA.UI
                 "~/Scripts/underscore.js"
                 ));
 
-//            bundles.Add(new ScriptBundle("~/bundles/requirejs").Include(
-//                "~/Scripts/require.js"
-//                ));
-
             // All application JS files (except mocks)
             bundles.Add(new ScriptBundle("~/bundles/jsapplibs")
                 .IncludeDirectory("~/Scripts/App/", "*.js", searchSubdirectories: false));
@@ -59,7 +55,10 @@ namespace SPA.UI
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                "~/Content/site.css",
+                "~/Content/style.css"
+            ));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",

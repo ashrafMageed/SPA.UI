@@ -44,11 +44,11 @@ namespace SPA.UI
 
             // All application JS files (except mocks)
             bundles.Add(new ScriptBundle("~/bundles/jsapplibs")
-                .IncludeDirectory("~/Scripts/App/", "*.js", searchSubdirectories: false));
+                .IncludeDirectory("~/Scripts/App/", "*.js", searchSubdirectories: true));
 
             // All mocks
             bundles.Add(new ScriptBundle("~/bundles/mocks")
-                .IncludeDirectory("~/Scripts/App/Mock", "*.js", searchSubdirectories: false));
+                .IncludeDirectory("~/Scripts/Mock", "*.js", searchSubdirectories: false));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.

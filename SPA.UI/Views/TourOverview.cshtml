@@ -1,0 +1,176 @@
+﻿<section class="tour-overview booking-step" role="main">
+    <header class="step-header">
+        <h1><span>Step 1 of 3 </span>Tour overview</h1>
+    </header>
+
+    <div class="tour-options">
+        <h2>Select tour options</h2>
+        <fieldset>
+            <div class="tour-summary group">
+                <p>You are booking</p>
+                <h3>European Discovery <span class="tour-duration">12 Days</span></h3>
+                <ul class="tour-dates">
+                    <li class="tour-start-date"><b>Starts London: </b><time datetime="2013-06-11">Tue, 11 June 2013</time></li>
+                    <li class="tour-end-date"><b>Ends London: </b><time datetime="2013-06-23">Mon, 23 June 2013</time></li>
+                </ul>
+                <p class="tour-map">Map</p>
+            </div>
+            
+            <fieldset class="passengers">
+                <h3>How many people are you booking for?</h3>
+                <div class="counter group adult-passengers">
+                    <label for="total-adult-passengers">Adults</label>
+                    <div>
+                        <button class="minus" type="button">Minus</button>
+                        <input class="counter-total" name="total-adult-passengers" type="text" value="1" />
+                        <button class="plus" type="button">Plus</button>
+                    </div>
+                </div>
+                <div class="counter group child-passengers">
+                    <label for="total-child-passengers">Children</label>
+                    <div>
+                        <button class="minus" type="button">Minus</button>
+                        <input class="counter-total" name="total-child-passengers" type="text" value="0" />
+                        <button class="plus" type="button">Plus</button>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <div class="accommodation"> 
+                <h3>Select your accommodation preferences</h3>
+                <fieldset class="passenger-1 selection-matrix">
+                    <div>
+                        <h3>Passenger 1<b class="required">*</b></h3>
+                    </div>
+                    <div class="room-type">
+                        <input class="room-type-single" name="room-p1" type="radio" value="single"/>
+                        <label for="room-type-single">
+                            Single
+                            <span class="room-price-adjustment"><b>Add US$ 615</b></span>
+                        </label>
+                    </div>
+                    <div class="room-type active">
+                        <input class="room-type-twin" name="room-p1" type="radio" value="twin share" checked />
+                        <label for="room-type-twin">
+                            Twin share
+                        </label>
+                    </div>
+                    <div class="room-type">
+                        <input class="room-type-triple" name="room-p1" type="radio" value="triple share"/>
+                        <label for="room-type-triple">
+                            Triple-share
+                            <span class="room-price-adjustment"><b>Subtract US$ 111</b></span>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+        </fieldset>
+    </div>
+    
+    <div class="additional-nights">
+        <h2>Do you need a hotel before or after</h2>
+        <fieldset>
+            <fieldset class="selection-matrix">
+                <div>
+                    <h3>Hotel before your tour<b class="required">*</b></h3>
+                    <p>Prices are per person per night based on sharing a twin room.</p>
+        		</div>
+                <div class="active">
+                    <input class="imperial-hotel-london" name="hotel-before" type="radio" value="Imperial Hotel London" checked />
+                    <label for="imperial-hotel-london">
+                        Royal National Hotel London
+                        <span><b>US$ 99 </b>/ night</span>
+                    </label>
+                    <label class="hidden" for="nights">Nights</label>
+                    <select name="nights">
+                        <option value="1" selected>1 night</option>
+                        <option value="2">2 nights</option>
+                        <option value="3">3 nights</option>
+                    </select>
+                </div>
+                <div>
+                    <input class="royal-national-hotel-london" name="hotel-before" type="radio" value="Royal National Hotel London"/>
+                    <label for="royal-national-hotel-london">
+                        Royal National Hotel London
+                        <span><b>US$ 79 </b>/ night</span>
+                    </label>
+                </div>
+                <div>
+                    <input class="no-thanks" name="hotel-before" type="radio" value="No thanks"/>
+                    <label for="no-thanks">No thanks</label>
+                </div>
+            </fieldset>
+            <fieldset class="selection-matrix">
+                <div>
+                    <h3>Hotel after your tour<b class="required">*</b></h3>
+                    <p>Prices are per person per night based on sharing a twin room.</p>
+        		</div>
+
+                <div>
+                    <input class="imperial-hotel-london" name="hotel-after" type="radio" value="Imperial Hotel London"/>
+                    <label for="imperial-hotel-london">
+                        Royal National Hotel London
+                        <span><b>US$ 99 </b>/ night</span>
+                    </label>
+                </div>
+                <div class="active">
+                    <input class="royal-national-hotel-london" name="hotel-after" type="radio" value="Royal National Hotel London" checked />
+                    <label for="royal-national-hotel-london">
+                        Royal National Hotel London
+                        <span><b>US$ 79 </b>/ night</span>
+                    </label>
+                    <label class="hidden" for="nights">Nights</label>
+                    <select name="nights">
+                        <option value="1" selected>1 night</option>
+                        <option value="2">2 nights</option>
+                        <option value="3">3 nights</option>
+                    </select>
+                </div>
+                <div>
+                    <input class="no-thanks" name="hotel-after" type="radio" value="No thanks"/>
+                    <label for="no-thanks">No thanks</label>
+                </div>
+            </fieldset>
+        </fieldset>
+    </div>
+    
+    <div class="travel-protection">
+        <h2>Travel Protection</h2>
+        <fieldset>
+        <p>Add <a href="#">Travel Protection</a>.</p>
+            <fieldset class="selection-matrix">
+                <div>
+                    <h3>Travel Protection for Passenger 1<b class="required">*</b></h3>
+                </div>
+                <div>
+                    <input class="yes-please" name="travel-protection-p1" type="radio" value="Buy Travel Protection" />
+                    <label for="yes-please">
+                    	Travel Protection
+                        <span><b>US$ 169.00</b></span>
+                    </label>
+                </div>
+                <div>
+                    <input class="no-thanks" name="travel-protection-p1" type="radio" value="No Travel Protection" />
+                    <label for="no-thanks">No Travel Protection</label>
+                </div>
+            </fieldset>
+        </fieldset>
+    </div>
+    
+    <div class="additional-tour">
+        <h2>Request and additional tour</h2>
+        <fieldset>
+            <p>Want to book an additional tour? Add it here and we will contact you.</p>
+            <label class="hidden" for="additional-tour-name">Tour name</label>
+            <input name="additional-tour-name" type="text" placeholder="Tour name" />
+            <label for="additional-tour-date">Tour departure date</label>
+            <input name="additional-tour-date" placeholder="Departure date" type="date" />
+        </fieldset>
+    </div>
+    
+    <section class="view-detail" data-bind="template: {name: 'flights.view'}"></section>
+
+	<div class="next-button group">
+    	<button name="next" type="button">Next</button>
+    </div>
+</section>

@@ -130,12 +130,15 @@
     <Content Include="Content\Images\acer2.jpg" />
     <Content Include="Content\Images\alienWare1.jpg" />
     <Content Include="Content\Images\asus1.jpg" />
+    <Content Include="Content\Images\button-minus.png" />
+    <Content Include="Content\Images\button-plus.png" />
     <Content Include="Content\Images\hp1.jpg" />
     <Content Include="Content\Images\hp2.jpg" />
     <Content Include="Content\Images\lenovo1.jpg" />
     <Content Include="Content\Images\lenovo2.jpg" />
     <Content Include="Content\Images\lenovo3.jpg" />
     <Content Include="Content\Images\samsung1.jpg" />
+    <Content Include="Content\style.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -194,26 +197,26 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\App\BookingModel.js" />
     <Content Include="Scripts\App\dataprimer.js" />
-    <Content Include="Scripts\App\model.Payment.js" />
+    <Content Include="Scripts\App\Models\PaymentModel.js" />
     <Content Include="Scripts\App\route-config.js" />
     <Content Include="Scripts\App\router.js" />
-    <Content Include="Scripts\App\model.Tour.js" />
-    <Content Include="Scripts\App\vm.PassengersDetails.js" />
-    <Content Include="Scripts\App\vm.shell.js" />
-    <Content Include="Scripts\App\vm.ProductDetail.js" />
-    <Content Include="Scripts\App\vm.Booking.js" />
-    <Content Include="Scripts\App\vm.Tour.js" />
-    <Content Include="Scripts\App\model.PassengerDetail.js" />
+    <Content Include="Scripts\App\Models\TourModel.js" />
+    <Content Include="Scripts\App\ViewModels\PassengersDetails.js" />
+    <Content Include="Scripts\App\ViewModels\shell.js" />
+    <Content Include="Scripts\App\ViewModels\ProductDetail.js" />
+    <Content Include="Scripts\App\ViewModels\Booking.js" />
+    <Content Include="Scripts\App\ViewModels\Tour.js" />
+    <Content Include="Scripts\App\Models\PassengerDetailModel.js" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <None Include="Scripts\amplify-vsdoc.js" />
     <Content Include="Scripts\amplify.min.js" />
     <Content Include="Scripts\App\binder.js" />
     <Content Include="Scripts\App\dataservices.js" />
-    <Content Include="Scripts\App\Mock\mock.generator.js" />
-    <Content Include="Scripts\App\Mock\ProductsDataMock.js" />
+    <Content Include="Scripts\Mock\mock.generator.js" />
+    <Content Include="Scripts\Mock\ProductsDataMock.js" />
     <Content Include="Scripts\App\ProductModel.js" />
     <Content Include="Scripts\App\Util.js" />
-    <Content Include="Scripts\App\vmBrowseProducts.js" />
+    <Content Include="Scripts\App\ViewModels\BrowseProducts.js" />
     <Content Include="Scripts\infuser.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -245,6 +248,8 @@
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Templates\_flights.view.tmpl.html" />
+    <Content Include="Templates\_priceBreakdown.view.tmpl.html" />
     <Content Include="Templates\_product.view.tmpl.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -260,10 +265,12 @@
     <Content Include="Views\products.cshtml" />
     <Content Include="Views\ProductView.cshtml" />
     <Content Include="Views\Booking.cshtml" />
+    <Content Include="Views\TourOverview.cshtml" />
+    <Content Include="Views\PassengerDetails.cshtml" />
+    <Content Include="Views\Payment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Scripts\App\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

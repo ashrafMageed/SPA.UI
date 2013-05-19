@@ -1,0 +1,319 @@
+﻿<section class="booking-step passenger-details" role="main">
+    <header class="step-header">
+        <h1><span>Step 2 of 3 </span>Passenger details</h1>
+    </header>
+	
+    <div class="passenger-1">
+        <h2>Passenger 1</h2>
+        <fieldset>
+        	<fieldset class="passenger-name">
+            	<label for="given-names-p1" class="hidden">Given names<b class="required">*</b></label>
+                <input name="given-names-p1" type="text" placeholder="Given names*" />
+                <label for="last-name-p1" class="hidden">Last name<b class="required">*</b></label>
+                <input name="last-name-p1" type="text" placeholder="Last name*" />
+            </fieldset>
+            
+            <fieldset class="date-of-birth multi-part-question">
+            	<div>
+                	<h3>Date of birth<b class="required">*</b></h3>
+                </div>
+                <div>
+                	<label for="dob-date-p1" class="hidden">Date</label>
+                    <select name="dob-date-p1">
+                    	<option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                    </select>
+                </div>
+                <div>
+                	<label for="dob-month-p1" class="hidden">Month</label>
+                    <select name="dob-month-p1">
+                    	<option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                    </select>
+                </div>
+                <div>
+                	<label for="dob-year-p1" class="hidden">Year</label>
+                    <select name="dob-year-p1">
+                    	<option value="1985">1985</option>
+                        <option value="1984">1984</option>
+                        <option value="1983">1983</option>
+                    </select>
+                </div>
+                <p class="question-notes">Your age will be verified on arrival.</p>
+            </fieldset>
+            
+            <fieldset class="gender selection-matrix">
+            	<div>
+                	<h3>Gender<b class="required">*</b></h3>
+                </div>
+                <div>
+                	<input name="gender-p1" class="gender-male" type="radio" value="male" />
+                	<label for="gender-male">Male</label>
+                </div>
+                <div>
+                    <input name="gender-p1" class="gender-female" type="radio" value="female" />
+                    <label for="gender-female">Female</label>
+                </div>
+            </fieldset>
+            
+            
+            
+            <fieldset class="passenger-email">
+            	<label for="email-p1" class="hidden">Email address<b class="required">*</b></label>
+                <input name="email-p1" type="email" placeholder="Email address*" />
+                <label for="confirm-email-p1" class="hidden">Confirm email address<b class="required">*</b></label>
+                <input name="confirm-email-p1" type="email" placeholder="Confirm email address*" />
+            </fieldset>
+            
+            <fieldset class="passenger-phone-number">
+            	<label for="telephone-p1" class="hidden">Phone number<b class="required">*</b></label>
+                <input name="telephone-p1" type="tel" placeholder="Phone number, including area code*" />
+            </fieldset>
+            
+            
+            <fieldset class="address">
+            	<h3>Address details</h3>
+                <div class="street-address">
+                    <label for="street-address-p1" class="hidden">Street address<b class="required">*</b></label>
+                    <input name="street-address-p1" type="text" placeholder="Street address*" />
+                </div>
+                <div class="city">
+                    <label for="city-p1" class="hidden">City<b class="required">*</b></label>
+                    <input name="city-p1" type="text" placeholder="City*" />
+                </div>
+                <div class="country">
+                    <label for="country-p1">Country<b class="required">*</b></label>
+                    <select name="country-p1">
+                        <option value="aus">Australia</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="usa" selected>United Sates of America</option>
+                    </select>
+                </div>
+                <div class="state">
+                    <label for="state-p1">State<b class="required">*</b></label>
+                    <select name="state-p1">
+                        <option value="alabama">Alabama</option>
+                        <option value="california">California</option>
+                        <option value="new-york" selected>New York</option>
+                        <option value="washington">Washington</option>
+                    </select>
+                </div>
+                <div class="zip">
+                    <label for="zip-p1">ZIP<b class="required">*</b></label>
+                    <input name="zip-p1" type="text" />
+                </div>
+                <div class="travel-documents">
+                    <input name="travel-documents" class="travel-documents-p1" type="radio" checked>
+                    <label for="travel-documents-p1">Send travel documents for all passengers to this address.</label>
+                </div>
+            </fieldset>
+            
+            <fieldset class="special-requests">
+            	<h3>Special requests</h3>
+                <label for="special-requests-p1" class="hidden">Special requests</label>
+                <textarea name="special-requests-p1" placeholder="e.g. food requirements, accommodation preferences" rows="1"></textarea>
+                <p class="question-notes">Please note that we will try wherever possible to accommodate you request, but we cannot guarantee it.</p>
+            </fieldset>
+            
+            <fieldset class="past-passenger">
+            	<h3>Are you a past passenger?</h3>
+                <p>If you have travelled with Contiki in the last 5 years you can save 5% on any tour.</p>
+                <div class="past-passenger-check">
+                    <input name="past-passenger-p1" type="checkbox" />
+                    <label for"past-passenger-p1">I am a past passenger</label>
+                </div>
+                <div class="past-passenger-tour">
+                    <label for="past-passenger-tour-p1" class="hidden">Tour name</label>
+                    <input name="past-passenger-tour-p1" type="text" placeholder="Tour name" />
+                </div>
+                <div class="past-passenger-dates multi-part-question">
+                	<div>
+                    	<h3>Date travelled</h3>
+                    </div>
+                    <div>
+                        <label for="past-passenger-month-p1" class="hidden">Month</label>
+                        <select name="past-passenger-month-p1">
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="past-passenger-year-p1" class="hidden">Year</label>
+                        <select name="past-passenger-year-p1">
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                        </select>
+                    </div>
+                </div>
+                <p class="question-notes">Please note: one of our agents will need to verify your eligibility. The savings amount will be refunded to you after booking</p>
+            </fieldset>
+        </fieldset>
+    </div>
+    
+    <div class="passenger-2">
+        <h2>Passenger 2</h2>
+        <fieldset>
+        	<fieldset class="passenger-name">
+            	<label for="given-names-p2" class="hidden">Given names<b class="required">*</b></label>
+                <input name="given-names-p2" type="text" placeholder="Given names*" />
+                <label for="last-name-p2" class="hidden">Last name<b class="required">*</b></label>
+                <input name="last-name-p2" type="text" placeholder="Last name*" />
+            </fieldset>
+            
+            <fieldset class="date-of-birth multi-part-question">
+            	<div>
+                	<h3>Date of birth<b class="required">*</b></h3>
+                </div>
+                <div>
+                	<label for="dob-date-p2" class="hidden">Date</label>
+                    <select name="dob-date-p2">
+                    	<option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                    </select>
+                </div>
+                <div>
+                	<label for="dob-month-p2" class="hidden">Month</label>
+                    <select name="dob-month-p2">
+                    	<option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                    </select>
+                </div>
+                <div>
+                	<label for="dob-year-p2" class="hidden">Year</label>
+                    <select name="dob-year-p2">
+                    	<option value="1985">1985</option>
+                        <option value="1984">1984</option>
+                        <option value="1983">1983</option>
+                    </select>
+                </div>
+                <p class="question-notes">Your age will be verified on arrival.</p>
+            </fieldset>
+            
+            <fieldset class="gender selection-matrix">
+            	<div>
+                	<h3>Gender<b class="required">*</b></h3>
+                </div>
+                <div>
+                	<input name="gender-p2" class="gender-male" type="radio" value="male" />
+                	<label for="gender-male">Male</label>
+                </div>
+                <div>
+                    <input name="gender-p2" class="gender-female" type="radio" value="female" />
+                    <label for="gender-female">Female</label>
+                </div>
+            </fieldset>
+            
+            
+            
+            <fieldset class="passenger-email">
+            	<label for="email-p2" class="hidden">Email address<b class="required">*</b></label>
+                <input name="email-p2" type="email" placeholder="Email address*" />
+                <label for="confirm-email-p2" class="hidden">Confirm email address<b class="required">*</b></label>
+                <input name="confirm-email-p2" type="email" placeholder="Confirm email address*" />
+            </fieldset>
+            
+            <fieldset class="passenger-phone-number">
+            	<label for="telephone-p2" class="hidden">Phone number<b class="required">*</b></label>
+                <input name="telephone-p2" type="tel" placeholder="Phone number, including area code*" />
+            </fieldset>
+            
+            
+            <fieldset class="address">
+            	<h3>Address details</h3>
+                <div class="street-address">
+                    <label for="street-address-p2" class="hidden">Street address<b class="required">*</b></label>
+                    <input  name="street-address-p2" type="text" placeholder="Street address*" />
+                </div>
+                <div class="city">
+                    <label for="city-p2" class="hidden">City<b class="required">*</b></label>
+                    <input name="city-p2" type="text" placeholder="City*" />
+                </div>
+                <div class="country">
+                    <label for="country-p2">Country<b class="required">*</b></label>
+                    <select name="country-p2">
+                        <option value="aus">Australia</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="usa" selected>United Sates of America</option>
+                    </select>
+                </div>
+                <div class="state">
+                    <label for="state-p2">State<b class="required">*</b></label>
+                    <select name="state-p2">
+                        <option value="alabama">Alabama</option>
+                        <option value="california">California</option>
+                        <option value="new-york" selected>New York</option>
+                        <option value="washington">Washington</option>
+                    </select>
+                </div>
+                <div class="zip">
+                    <label for="zip-p2">ZIP<b class="required">*</b></label>
+                    <input name="zip-p2" type="text" />
+                </div>
+                <div class="travel-documents">
+                    <input name="travel-documents" class="travel-documents-p2" type="radio">
+                    <label for="travel-documents-p2">Send travel documents for all passengers to this address.</label>
+                </div>
+            </fieldset>
+            
+            <fieldset class="special-requests">
+            	<h3>Special requests</h3>
+                <label for="special-requests-p2" class="hidden">Special requests</label>
+                <textarea name="special-requests-p2" placeholder="e.g. food requirements, accommodation preferences" rows="1"></textarea>
+                <p class="question-notes">Please note that we will try wherever possible to accommodate you request, but we cannot guarantee it.</p>
+            </fieldset>
+            
+            <fieldset class="past-passenger">
+            	<h3>Are you a past passenger?</h3>
+                <p>If you have travelled with Contiki in the last 5 years you can save 5% on any tour.</p>
+                <div class="past-passenger-check">
+                    <input name="past-passenger-p2" type="checkbox" />
+                    <label for"past-passenger-p2">I am a past passenger</label>
+                </div>
+                <div class="past-passenger-tour">
+                    <label for="past-passenger-tour-p2" class="hidden">Tour name</label>
+                    <input name="past-passenger-tour-p2" type="text" placeholder="Tour name" />
+                </div>
+                <div class="multi-part-question past-passenger-dates">
+                	<div>
+                    	<h3>Date travelled</h3>
+                    </div>
+                    <div>
+                        <label for="past-passenger-month-p2" class="hidden">Month</label>
+                        <select name="past-passenger-month-p2">
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="past-passenger-year-p2" class="hidden">Year</label>
+                        <select name="past-passenger-year-p2">
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                        </select>
+                    </div>
+                </div>
+                <p class="question-notes">Please note: one of our agents will need to verify your eligibility. The savings amount will be refunded to you after booking</p>
+            </fieldset>
+        
+        </fieldset>
+    </div>
+    
+	<div class="next-button group">
+    	<button name="back" type="button">Back</button>
+        <button name="next" type="button">Next</button>
+    </div>
+</section>

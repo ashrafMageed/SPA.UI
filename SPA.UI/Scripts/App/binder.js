@@ -1,5 +1,5 @@
-﻿define('binder', ['ko', 'infuser', 'browseProductsViewModel', 'ProductDetailsViewModel', 'shell', 'BookingViewModel'],
-    function (ko, infuser, browseProductsViewModel, ProductDetailsViewModel, ShellViewModel, BookingViewModel) {
+﻿define('binder', ['ko', 'infuser', 'browseProductsViewModel', 'ProductDetailsViewModel', 'shell', 'BookingViewModel', 'tourViewModel'],
+    function (ko, infuser, browseProductsViewModel, ProductDetailsViewModel, ShellViewModel, BookingViewModel, tourViewModel) {
         var init = function () {
             
             // infuser set up - move to config later on
@@ -11,7 +11,7 @@
             ko.applyBindings(ProductDetailsViewModel, $('#productdetails-view').get(0)); 
             ko.applyBindings(ShellViewModel, $('#shellTop-view').get(0));
             ko.applyBindings(BookingViewModel, $('#booking-view').get(0));
-            
+            ko.applyBindings(tourViewModel, $('#tour-overview').get(0));
         };
 
         return {

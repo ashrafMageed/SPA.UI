@@ -1,8 +1,8 @@
-﻿define('BookingViewModel', ['ko', 'dataService', 'tourViewModel', 'router'],
+﻿define('BookingViewModel', ['ko', 'dataService', 'tourViewModel'],
     function (ko, dataservice, tourViewModel, router) {
-        var tour = ko.observable(),
-            payment = ko.observable(),
-            passengerDetails = ko.observableArray(),
+        var 
+//            payment = ko.observable(),
+//            passengerDetails = ko.observableArray(),
             bookingStepsHashes = {
                 tour: '#/Booking/Tour',
                 passengerDetails: '#/Booking/PassengerDetails',
@@ -13,14 +13,12 @@
             },
             activate = function () {
                 tourViewModel.activate();
-                tour(tourViewModel.tourDetails);
             };
 
         return {
             activate: activate,
-            tour: tour,
-            paymentDetails: payment,
-            passengerDetails: passengerDetails,
+//            paymentDetails: payment,
+//            passengerDetails: passengerDetails,
             bookingStepsHashes: bookingStepsHashes
         };
 });

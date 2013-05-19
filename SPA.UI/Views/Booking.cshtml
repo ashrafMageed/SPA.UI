@@ -2,29 +2,52 @@
     
     <nav id="steps-view" class="booking-nav">
         <ul data-bind="with: bookingStepsHashes">
-            <li class="route-left"><a data-bind="attr: {href: tour}">Tour</a></li>
-            <li class="route-left"><a data-bind="attr: {href: passengerDetails}">Passenger Details</a></li>
-            <li class="route-left"><a data-bind="attr: {href: payment}">Payment</a></li>
+            <li class="route-left"><a data-bind="attr: {href: tour}">1</a></li>
+            <li class="route-left"><a data-bind="attr: {href: passengerDetails}">2</a></li>
+            <li class="route-left"><a data-bind="attr: {href: payment}">3</a></li>
         </ul>
     </nav>
-
+</section>
     <section id="tour-overview" class="booking-steps active">
-        <section data-bind="with:tour">
-            <section>
+
                 <section data-bind="with:tour">
                     You are booking: 
-                    <label data-bind="text: name"></label>
-                    for <label data-bind="text: duration"></label> days
+                    <span data-bind="text: name"></span>
+                    for <span data-bind="text: duration"></span> days.
+                    
+                    <article>
+                        Starts <span data-bind="text: startCity"></span> <span data-bind="text: startDate"></span>
+                    </article>
+                    
+                    <article>
+                        Ends <span data-bind="text: endCity"></span> <span data-bind="text: endDate"></span>
+                    </article>
                 </section>
+
+                <article>
+                    How many passengers are you booking for? 
+                    <button data-bind="click: AddPassenger">+</button><input data-bind="value: numberofPassengers"/><button data-bind="click: RemovePassenger">-</button>
+                </article>
+                    
+                <article>
+                    Select your accomodation preference:
+                    <section data-bind="foreach: passengers">
+                        <article data-bind="foreach: $root.rooms">
+                            <input type="radio" data-bind="value: type, selected: selected"/> 
+                            <span data-bind="text:type"></span>
+                            <span data-bind="text:price"></span>
+                        </article>
+                        
+                    </section>
+                </article>
+            
                 <section data-bind="foreach: hotels">
                     <label data-bind="text: name"></label>
                 </section>
-                <section data-bind="foreach: rooms">
-                    <label data-bind="text: price"></label>
-                </section>
-            </section>
+                
+            
         </section>
-    </section>
+    
     <section id="passenger-detail" class="booking-steps">
         <section data-bind="with:passengerDetails">
             <label>Test Label</label>
@@ -36,4 +59,4 @@
         </section>
     </section>
     <section id="payment" class="booking-steps"></section>
-</section>
+

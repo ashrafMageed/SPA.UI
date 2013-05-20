@@ -7,15 +7,7 @@
             <li class="route-left"><a data-bind="attr: {href: payment}">3</a></li>
         </ul>
     </nav>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 </section>
-=======
-=======
->>>>>>> fae91833a39f45bd9024f47537d60b54f5c0bbf8
-=======
->>>>>>> fae91833a39f45bd9024f47537d60b54f5c0bbf8
     
 @*    <nav class="booking-steps" role="navigation">*@
 @*	<ul class="group">*@
@@ -25,62 +17,58 @@
 @*    </ul>*@
 @*</nav>*@
 
->>>>>>> fae91833a39f45bd9024f47537d60b54f5c0bbf8
-    <section id="tour-overview" class="booking-steps active">
 
-                <section data-bind="with:tour">
-                    You are booking: 
-                    <span data-bind="text: name"></span>
-                    for <span data-bind="text: duration"></span> days.
-                    
-                    <article>
-                        Starts <span data-bind="text: startCity"></span> <span data-bind="text: startDate"></span>
-                    </article>
-                    
-                    <article>
-                        Ends <span data-bind="text: endCity"></span> <span data-bind="text: endDate"></span>
-                    </article>
-                </section>
-
-                <article>
-                    How many passengers are you booking for? 
-                    <button data-bind="click: AddPassenger">+</button><input data-bind="value: numberofPassengers"/><button data-bind="click: RemovePassenger">-</button>
-                </article>
-                    
-                <article>
-                    Select your accomodation preference:
-                    <section data-bind="foreach: passengers">
-                        <article data-bind="foreach: $root.rooms">
-                            <input type="radio" data-bind="value: type, selected: selected"/> 
-                            <span data-bind="text:type"></span>
-                            <span data-bind="text:price"></span>
-                        </article>
-                        
-                    </section>
-                </article>
-            
-                <section data-bind="foreach: hotels">
-                    <label data-bind="text: name"></label>
-                </section>
-                
-            
-        </section>
-    
-    <section id="passenger-detail" class="booking-steps">
-        <section data-bind="with:passengerDetails">
-            <label>Test Label</label>
-            <textarea>Test</textarea>
-            <label>Test Label</label>
-            <textarea>Test</textarea>
-            <label>Test Label</label>
-            <textarea>Test</textarea>
-        </section>
-    </section>
-    <section id="payment" class="booking-steps"></section>
-<<<<<<< HEAD
-
-=======
-</section>
+@*    <section id="tour-overview" class="booking-steps active">*@
+@**@
+@*                <section data-bind="with:tour">*@
+@*                    You are booking: *@
+@*                    <span data-bind="text: name"></span>*@
+@*                    for <span data-bind="text: duration"></span> days.*@
+@*                    *@
+@*                    <article>*@
+@*                        Starts <span data-bind="text: startCity"></span> <span data-bind="text: startDate"></span>*@
+@*                    </article>*@
+@*                    *@
+@*                    <article>*@
+@*                        Ends <span data-bind="text: endCity"></span> <span data-bind="text: endDate"></span>*@
+@*                    </article>*@
+@*                </section>*@
+@**@
+@*                <article>*@
+@*                    How many passengers are you booking for? *@
+@*                    <button data-bind="click: AddPassenger">+</button><input data-bind="value: numberofPassengers"/><button data-bind="click: RemovePassenger">-</button>*@
+@*                </article>*@
+@*                    *@
+@*                <article>*@
+@*                    Select your accomodation preference:*@
+@*                    <section data-bind="foreach: passengers">*@
+@*                        <article data-bind="foreach: $root.rooms">*@
+@*                            <input type="radio" data-bind="value: type, selected: selected"/> *@
+@*                            <span data-bind="text:type"></span>*@
+@*                            <span data-bind="text:price"></span>*@
+@*                        </article>*@
+@*                        *@
+@*                    </section>*@
+@*                </article>*@
+@*            *@
+@*                <section data-bind="foreach: hotels">*@
+@*                    <label data-bind="text: name"></label>*@
+@*                </section>*@
+@*                *@
+@*            *@
+@*        </section>*@
+@*    *@
+@*    <section id="passenger-detail" class="booking-steps">*@
+@*        <section data-bind="with:passengerDetails">*@
+@*            <label>Test Label</label>*@
+@*            <textarea>Test</textarea>*@
+@*            <label>Test Label</label>*@
+@*            <textarea>Test</textarea>*@
+@*            <label>Test Label</label>*@
+@*            <textarea>Test</textarea>*@
+@*        </section>*@
+@*    </section>*@
+@*    <section id="payment" class="booking-steps"></section>*@
 
 <section>
     @RenderPage("TourOverview.cshtml")
@@ -106,6 +94,8 @@
     </ul>
     <small>&copy; Copyright TTC Travel Group Ltd. 2013. All rights reserved.</small>
 </footer>
+
+<aside>
 	<h3>Important</h3>
     <p>Payment will be required to confirm your booking.</p>
     <p>Day 1 is the depart USA date. Day 2 is the first included hotel night in London. The tour ends in Paris with a complimentary transfer to the airport at approximately 10:00am</p>
@@ -117,13 +107,4 @@
         <li><a href="#">Useful links</a></li>
     </ul>
     <small>&copy; Copyright TTC Travel Group Ltd. 2013. All rights reserved.</small>
-<<<<<<< HEAD
-<<<<<<< HEAD
 </footer>
->>>>>>> fae91833a39f45bd9024f47537d60b54f5c0bbf8
-=======
-</footer>
->>>>>>> fae91833a39f45bd9024f47537d60b54f5c0bbf8
-=======
-</footer>
->>>>>>> fae91833a39f45bd9024f47537d60b54f5c0bbf8

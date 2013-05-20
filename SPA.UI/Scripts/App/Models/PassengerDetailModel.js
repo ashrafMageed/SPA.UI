@@ -11,6 +11,8 @@
         this.postCode = ko.observable();
         this.country = ko.observable();
         this.state = ko.observable();
+        this.isAdult = ko.observable(true);
+        this.passengerNumber = 1;
     };
 
     passenger.Nullo = new passenger();

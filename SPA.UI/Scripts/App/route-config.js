@@ -39,15 +39,15 @@
                             route: '#/Booking/Tour',
                             title: 'Tour Overview',
                             callback: tour.activate,
-                            group: '.booking-steps',
+                            group: '.booking-step',
                             id: '#tour-overview'
                         },
                         {
                             route: '#/Booking/PassengerDetails',
                             title: 'Passenger Details',
                             callback: passengerDetails.activate,
-                            group: '.booking-steps',
-                            id: '#passenger-detail'
+                            group: '.booking-step',
+                            id: '#passenger-details'
                         }//,
 //                        {
 //                            route: '#/Payment',

@@ -59,7 +59,7 @@
                     // move this into presenter module
                     var $group = $(options.group);
                     alert(options.group);
-                    if (options.group === '.booking-steps') {
+                    if (options.group === '.booking-step') {
                         $group.hide();//.find(".active").hide().removeClass('active');
                         var $section = $(options.id);
                         $section.css({

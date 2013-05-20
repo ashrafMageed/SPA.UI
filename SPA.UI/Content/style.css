@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 /*setup HTML 5 elements*/
@@ -265,8 +265,8 @@ footer {
 		background-color:#333333;
 	}
 	
-	.counter button.minus {background:url(../img/button-minus.png) center center no-repeat #333333; text-indent:-9em;}
-	.counter button.plus {background:url(../img/button-plus.png) center center no-repeat #333333; text-indent:-9em;}
+	.counter button.minus {background:url(Images/button-minus.png) center center no-repeat #333333; text-indent:-9em;}
+	.counter button.plus {background:url(Images/button-plus.png) center center no-repeat #333333; text-indent:-9em;}
 	
 	.counter input {width:4em;/*64px*/ margin-right:0.375em;/*6px*/ text-align:center;}
 	

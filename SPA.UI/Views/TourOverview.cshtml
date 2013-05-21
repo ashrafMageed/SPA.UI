@@ -36,34 +36,7 @@
                 </div>
             </fieldset>
             
-            <div class="accommodation"> 
-                <h3>Select your accommodation preferences</h3>
-                <fieldset class="passenger-1 selection-matrix">
-                    <div>
-                        <h3>Passenger 1<b class="required">*</b></h3>
-                    </div>
-                    <div class="room-type">
-                        <input class="room-type-single" name="room-p1" type="radio" value="single"/>
-                        <label for="room-type-single">
-                            Single
-                            <span class="room-price-adjustment"><b>Add US$ 615</b></span>
-                        </label>
-                    </div>
-                    <div class="room-type active">
-                        <input class="room-type-twin" name="room-p1" type="radio" value="twin share" checked />
-                        <label for="room-type-twin">
-                            Twin share
-                        </label>
-                    </div>
-                    <div class="room-type">
-                        <input class="room-type-triple" name="room-p1" type="radio" value="triple share"/>
-                        <label for="room-type-triple">
-                            Triple-share
-                            <span class="room-price-adjustment"><b>Subtract US$ 111</b></span>
-                        </label>
-                    </div>
-                </fieldset>
-            </div>
+            <div data-bind="template: {name: 'roomTypes.view'}"></div>
         </fieldset>
     </div>
     

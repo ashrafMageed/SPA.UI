@@ -198,6 +198,7 @@
     <Content Include="Scripts\App\BookingModel.js" />
     <Content Include="Scripts\App\dataprimer.js" />
     <Content Include="Scripts\App\Models\PaymentModel.js" />
+    <Content Include="Scripts\App\Models\RoomModel.js" />
     <Content Include="Scripts\App\route-config.js" />
     <Content Include="Scripts\App\router.js" />
     <Content Include="Scripts\App\Models\TourModel.js" />
@@ -251,6 +252,7 @@
     <Content Include="Templates\_flights.view.tmpl.html" />
     <Content Include="Templates\_priceBreakdown.view.tmpl.html" />
     <Content Include="Templates\_product.view.tmpl.html" />
+    <Content Include="Templates\_roomTypes.view.tmpl.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

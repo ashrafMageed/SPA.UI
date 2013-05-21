@@ -68,7 +68,6 @@ body>form{width:960px; margin:0 auto;}
 section {
 	position:relative;
 	float:left;
-	width:65%;
 }
 
 section ~ aside {
@@ -145,6 +144,9 @@ footer {
 		
 	}
 	
+    .room-price-adjustment {
+        text-align: center;
+    }
 	/*step header*/
 	.step-header h1 {
 		margin-bottom:0.75em;/*24px*/

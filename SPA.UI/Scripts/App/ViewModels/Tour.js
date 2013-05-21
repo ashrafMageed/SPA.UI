@@ -1,5 +1,5 @@
-﻿﻿define('tourViewModel', ['jquery', 'ko', 'dataService', 'underscore', 'passengerModel'],
-﻿    function($, ko, dataservice, _, passengerModel) {
+﻿﻿define('tourViewModel', ['jquery', 'ko', 'dataService', 'underscore', 'passengerModel', 'roomModel'],
+﻿    function($, ko, dataservice, _, passengerModel, roomModel) {
 ﻿        var hotels = ko.observableArray(),
 ﻿            travelProtection = ko.observableArray(),
 ﻿            selectedRooms = ko.observableArray(),
@@ -23,8 +23,8 @@
 ﻿                util.mapToObservableArray(tour.hotels, hotels);
 
 
-﻿                var availableRooms = dataservice.getRoomsForTour(tour);
-﻿                util.mapToObservableArray(availableRooms.room, rooms);
+﻿                var rooms = dataservice.getRoomsForTour(tour);
+﻿                util.mapToObservableArray(rooms.room, availableRooms);
 ﻿            },
 ﻿            addAdult = function() {
 ﻿                addPassenger(this.adults, true);
@@ -60,21 +60,46 @@
 ﻿                passengerCounter(currentNumber - 1);
 
 ﻿                // remove adult/child
-﻿                var passengerCopy = passengers.slice(0);
-﻿                var matchingElement = ko.utils.arrayFirst(passengerCopy.reverse(), function(item) {
+﻿                removeLastOccurenceFromArray(passengers, lastPassengerOccurenceCallback(isAdult));
+
+﻿            },
+﻿            addRoom = function() {
+
+﻿                var model = new roomModel();
+﻿                model.number = this.selectedRooms().length;
+﻿                
+﻿                this.selectedRooms.push(model);
+﻿            },
+﻿            removeRoom = function() {
+﻿                var currentNumber = this.selectedRooms().length;
+
+﻿                if (currentNumber <= 1)
+﻿                    return;
+
+﻿                this.selectedRooms.pop();
+
+﻿            },
+﻿            lastPassengerOccurenceCallback = function(isAdult) {
+﻿                return function(item) {
 ﻿                    return item.isAdult() === isAdult;
-﻿                });
+﻿                };
+﻿            },
+﻿            removeLastOccurenceFromArray = function(targetArray, evaluator) {
+﻿                var passengerCopy = targetArray.slice(0);
+﻿                var matchingElement = ko.utils.arrayFirst(passengerCopy.reverse(), evaluator);
 
-﻿                passengers.remove(matchingElement);
-
+﻿                targetArray.remove(matchingElement);
 ﻿            },
 ﻿            activate = function() {
 ﻿                getTour();
 ﻿                passengers.push(passengerModel.Nullo);
+﻿                selectedRooms.push(roomModel.Nullo);
 ﻿            };
 
 ﻿        return {
 ﻿            activate: activate,
+﻿            removeRoom: removeRoom,
+﻿            addRoom: addRoom,
 ﻿            adults: adults,
 ﻿            children: children,
 ﻿            addAdult: addAdult,
@@ -83,8 +108,8 @@
 ﻿            removeChild: removeChild,
 ﻿            hotels: hotels,
 ﻿            travelProtection: travelProtection,
-selectedRooms: selectedRooms,
-availableRooms: availableRooms,
+﻿            selectedRooms: selectedRooms,
+﻿            availableRooms: availableRooms,
 ﻿            numberofPassengers: numberofPassengers,
 ﻿            tour: tour,
 ﻿            passengers: passengers

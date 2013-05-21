@@ -1,0 +1,27 @@
+﻿<div class="counter group child-passengers">
+    <label for="total-child-passengers">Rooms</label>
+    <div>
+        <button class="minus" type="button" data-bind="click: $root.removeRoom">Minus</button>
+        <input class="counter-total" name="total-child-passengers" type="text" data-bind="value: $root.selectedRooms().length" />
+        <button class="plus" type="button" data-bind="click: $root.addRoom">Plus</button>
+    </div>
+</div>
+<h3>Select your accommodation preferences</h3>
+
+<div class="accommodation" data-bind="foreach:selectedRooms"> 
+    
+    <fieldset class="passenger-1 selection-matrix">
+        <div>
+            <h3>Room <!--<b data-bind="text:number"></b>--><b class="required">*</b></h3>
+        </div>
+        <fieldset data-bind="foreach: $root.availableRooms">
+            <div class="room-type">
+                <input class="room-type-single" name="room-p1" type="radio" data-bind="value: type, checked: selected"/>
+                <label for="room-type-single" data-bind="text:type">
+                
+                </label>
+                <span class="room-price-adjustment"><b data-bind="text: price"></b></span>
+            </div>
+        </fieldset>
+    </fieldset>
+</div>

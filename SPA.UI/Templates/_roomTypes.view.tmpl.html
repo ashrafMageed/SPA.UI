@@ -12,11 +12,11 @@
     
     <fieldset class="passenger-1 selection-matrix">
         <div>
-            <h3>Room <!--<b data-bind="text:number"></b>--><b class="required">*</b></h3>
+            <h3><b>Room </b> <b id="room-number" data-bind="text: roomNumber"></b><b class="required">*</b></h3>
         </div>
-        <fieldset data-bind="foreach: $root.availableRooms">
+        <fieldset id="room-type-selection" data-bind="foreach: $root.availableRooms">
             <div class="room-type">
-                <input class="room-type-single" name="room-p1" type="radio" data-bind="value: type, checked: selected"/>
+                <input class="room-type-single" type="radio" data-bind="value: type, checked: $parent.type, name: $parent.roomNumber"/>
                 <label for="room-type-single" data-bind="text:type">
                 
                 </label>

@@ -36,7 +36,7 @@
                 </div>
             </fieldset>
             
-            <div data-bind="template: {name: 'roomTypes.view'}"></div>
+            <div data-bind="template: {name: 'roomTypes.view', afterRender: $root.roomsTemplateRendered}"></div>
         </fieldset>
     </div>
     
